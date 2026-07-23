@@ -7,8 +7,8 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      # This points to the 'main' branch of your custom code-reviewer repository!
-      - uses: ishpreet7226/code-reviewer@main
+      # THIS points to the repo we just pushed!
+      - uses: ishpreet7226/code-reviewer@main 
         with:
           api-to-use: 'anthropic'
           anthropic-key: ${{ secrets.ANTHROPIC_API_KEY }}
